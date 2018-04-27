@@ -236,6 +236,7 @@ Use it directly with the common options
     -f, --file [file]                  File [file]
     -tpl, --template [template]        Template [template]
     -r, --repo_url [repo_url]          Repo url [repo_url]
+        --issue_url [url]               Issue url [issue_url]
     -l, --logo [logo]                  Logo path [logo]
     -i, --intro [intro]                intro text [intro]
     -t, --tag [tag]                    Since tag [tag]
@@ -243,7 +244,7 @@ Use it directly with the common options
     -g, --grep [grep]                  Grep commits for [grep]
     -d, --debug                        Debugger
     -p, --provider [provider]          Provider: gitlab, github, bitbucket (Optional)
-
+    
 ```
 
 For example:

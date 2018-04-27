@@ -20,6 +20,7 @@ if (process.argv.join('').replace(/\\/g,'/').indexOf('/grunt') === -1) {
     .option('-f, --file [file]', 'File [file]')
     .option('-tpl, --template [template]', 'Template [template]')
     .option('-r, --repo_url [repo_url]', 'Repo url [repo_url]')
+    .option('    --issue_url [issue_url]', 'Issue url [issue_url]')
     .option('-l, --logo [logo]', 'Logo path [logo]')
     .option('-i, --intro [intro]', 'intro text [intro]')
     .option('-t, --tag [tag]', 'Since tag [tag]')
@@ -75,6 +76,11 @@ if (process.argv.join('').replace(/\\/g,'/').indexOf('/grunt') === -1) {
   if (program.repo_url){
     options.repo_url = program.repo_url;
     console.log('  - With URL %s', program.repo_url);
+  }
+
+  if (program.issue_url){
+    options.repo_url = program.issue_url;
+    console.log('  - With issue URL %s', program.issue_url);
   }
 
   if (program.provider){
